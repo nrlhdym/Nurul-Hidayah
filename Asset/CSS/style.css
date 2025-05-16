@@ -1,0 +1,339 @@
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.bgimg-1 {
+  background-image: url('../Bg/Home_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 1000px;
+}
+
+.bgimg-2 {
+  background-image: url('../Bg/Work.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url('../Bg/Fac.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image: url('../Bg/skill.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+}
+
+.bgimg-5 {
+  background-image: url('../Bg/bg5.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+}
+
+
+
+p {text-align: justify;}
+
+.progress-bar {
+  text-align: center;
+  color: white;
+  padding: 6px 0;
+  border-radius: 20px;
+  font-weight: bold;
+  width: 0;
+  animation: growBar 2s ease forwards;
+}
+
+.gradient-green {background: linear-gradient(to right, #c2f0c2, #a0e3e2);}
+.gradient-purple {background: linear-gradient(to right, #d8c2f0, #f0b3d8);}
+.gradient-orange {background: linear-gradient(to right, #ffd6a5, #ffb6b9);}
+.gradient-peach {
+  background: linear-gradient(to right, #ffd6a5, #ffb6b9);
+}
+.gradient-mint {
+  background: linear-gradient(to right, #d4f5dc, #e1f7f5);
+}
+
+.gradient-rose-pink {
+  background: linear-gradient(to right, #ffe1e9, #f7d9ff);
+}
+.gradient-lilac {
+  background: linear-gradient(to right, #e7ddf5, #f0e9ff);
+}
+.gradient-goldpastel {
+  background: linear-gradient(to right, #fff5d1, #ffeecb);
+}
+.gradient-periwinkle {
+  background: linear-gradient(to right, #dde7ff, #e5d9f5);
+}
+.gradient-skyblue {
+  background: linear-gradient(to right, #d6f0ff, #cce5ff);
+}
+
+
+
+
+
+@keyframes growBar {
+  from {width: 0;}
+  to {width: var(--bar-width);}
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5  {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+.fade-slide {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-slide.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.experience-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.section-subtitle {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 40px;
+  color: #555;
+}
+.experience-category {
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: #333;
+  text-align: center;
+}
+.experience-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+.experience-card {
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  flex: 1 1 45%;
+  max-width: 500px;
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+}
+.card-content h4 {
+  margin: 0;
+  font-size: 20px;
+  color: #222;
+}
+.position {
+  font-weight: bold;
+  color: #117a8b;
+  margin: 6px 0 4px;
+}
+.date {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+.desc {
+  font-size: 15px;
+  color: #333;
+}
+
+
+.education-timeline {
+  position: relative;
+  margin: 40px 0;
+  padding-left: 30px;
+  border-left: 4px solid #ddd;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -11px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  background: #a0e3e2;
+  border: 3px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #c2f0c2;
+}
+
+.edu-photo {
+  width: 220px;
+  height: 140px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.edu-card {
+  flex: 1 1 60%;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .education-timeline {
+    border-left: none;
+    padding-left: 0;
+  }
+  .timeline-dot {
+    display: none;
+  }
+  .edu-photo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.project-card {
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  color: #333;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+.project-card h4 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.project-card p {
+  margin: 0 0 10px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+  background: transparent;
+}
+
+.photo-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.photo-card:hover {
+  transform: translateY(-5px);
+}
+
+.photo-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.photo-card .card-body {
+  padding: 15px;
+  text-align: left;
+}
+
+.photo-card .card-body h4 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #333;
+}
+
+.photo-card .card-body p {
+  font-size: 14px;
+  color: #666;
+}
+
